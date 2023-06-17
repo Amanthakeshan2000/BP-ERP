@@ -1,0 +1,62 @@
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\bin\Debug\BPERP.exe.config
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\bin\Debug\BPERP.exe
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\bin\Debug\BPERP.pdb
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.AssemblyReference.cache
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Form1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Properties.Resources.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.GenerateResource.cache
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.CoreCompileInputs.cache
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.exe
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.pdb
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Dashboard.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Resources.doctor.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.DoctorUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.UserControl1Dashboard.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.UserControl2patient.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.AppoinmentUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.PrescriptionUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Emergency_StopUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.InvoiceUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.PaymentUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.ScheduleUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Setup_DataUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Users_UserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Web_SettingUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP._2_DoctorListUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP._2_patientListUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP._2_appoinmentListUserControl1.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Doctor_Register_new.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.my_details_Doctor.resources
+C:\Users\Amantha\Desktop\ERP\BPERP\BPERP\obj\Debug\BPERP.Edit_My_Details.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\bin\Debug\BPERP.exe.config
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\bin\Debug\BPERP.exe
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\bin\Debug\BPERP.pdb
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.AssemblyReference.cache
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.SuggestedBindingRedirects.cache
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP._2_appoinmentListUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP._2_DoctorListUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP._2_patientListUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.AppoinmentUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Dashboard.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.DoctorUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Doctor_Register_new.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Edit_My_Details.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Emergency_StopUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Form1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.InvoiceUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.my_details_Doctor.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.PaymentUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.PrescriptionUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Properties.Resources.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Resources.doctor.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.ScheduleUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Setup_DataUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.UserControl1Dashboard.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.UserControl2patient.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Users_UserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.Web_SettingUserControl1.resources
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.GenerateResource.cache
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.csproj.CoreCompileInputs.cache
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.exe
+D:\Old\ERP SAVE\z1\ERP\BPERP\BPERP\obj\Debug\BPERP.pdb

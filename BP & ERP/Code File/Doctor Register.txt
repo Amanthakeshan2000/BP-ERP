@@ -1,0 +1,149 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using System.Data.Sql;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+
+using System.Net;
+using System.Net.Mail;
+
+
+namespace WindowsFormsApp1
+{
+
+
+    public partial class D_Form3 : Form
+    {
+
+
+        String randomCode;
+        public static String to;
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+(
+int nLeftRect,     // x-coordinate of upper-left corner
+int nTopRect,      // y-coordinate of upper-left corner
+int nRightRect,    // x-coordinate of lower-right corner
+int nBottomRect,   // y-coordinate of lower-right corner
+int nWidthEllipse, // height of ellipse
+int nHeightEllipse // width of ellipse
+);
+
+
+        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-I50R950\\SQLEXPRESS;Initial Catalog=Doctor_Register1;Integrated Security=True");
+
+        public D_Form3()
+        {
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+        }
+
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+          
+                Application.Restart();
+          
+        }
+
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            String from, pass, messageBody;
+            Random rand = new Random();
+            randomCode = (rand.Next(999999)).ToString();
+            MailMessage message = new MailMessage();
+            to = "healthcaremedicalclinic597@gmail.com";
+            from = "healthcaremedicalclinic597@gmail.com";
+            pass = "xqeobacixabtacgv";
+            messageBody = "Doctor Id : " + textBox1.Text+ "\nUser Name : " + textBox2.Text + "\nDoctor Name : " + textBox3.Text + "\nDoctor email : " + textBox8.Text + "\nDesignation : " + textBox7.Text+ "\nDegrees : " + textBox6.Text + "\nDepartment : " + textBox5.Text + "\nSpecialist : " + textBox11.Text + "\nDoctor_experiences : " + textBox10.Text + "\nbirthDay : " + dateTimePicker1.Text + "\nDoctor phone Number : " + textBox13.Text + "\n\nHealth Care Clinic Management System Registration Code : " + randomCode;
+            message.To.Add(to);
+            message.From = new MailAddress(from);
+            message.Body = messageBody;
+            message.Subject = "Health Care Clinic Management System Registration Code ";
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            smtp.EnableSsl = true;
+            smtp.Port = 587;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.Credentials = new NetworkCredential(from, pass);
+
+            try
+            {
+                smtp.Send(message);
+                MessageBox.Show("Code Send Successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+if (randomCode == (textBox9.Text).ToString())
+     {
+
+    to = "healthcaremedicalclinic597@gmail.com";
+    // resetPass rp = new resetPass();
+    // this.Hide();
+     // rp.Show();
+
+
+                if (textBox4.Text != "" && textBox12.Text== textBox4.Text)
+            {
+                errorProvider1.SetError(textBox12, "");
+                string insertQuary = "INSERT INTO Doctor_Register_Table(D_Id, username, password, D_name, D_email, designation, degrees, department, specialist, D_experiences, birthDay, D_phone) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox4.Text + "', '" + textBox3.Text + "', '" + textBox8.Text + "', '" + textBox7.Text + "', '" + textBox6.Text + "', '" + textBox5.Text + "', '" + textBox11.Text + "', '" + textBox10.Text + "', '" + dateTimePicker1.Text + "', '" + textBox13.Text + "')";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(insertQuary, conn);
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    if (MessageBox.Show("Are You Sure Create New Account", "Create Doctor Account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        //MessageBox.Show("Data Insert Successful...!");
+
+                        //Register Code
+                     
+
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Data Not Insert...!");
+                }
+                conn.Close();
+            }
+            else
+            {
+                errorProvider1.SetError(textBox12, "Password Not Match");     
+            }
+
+            }
+            else
+            {
+                MessageBox.Show("Wrong Code");
+            }
+        }
+
+
+ 
+    }
+}

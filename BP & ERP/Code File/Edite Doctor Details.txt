@@ -1,0 +1,101 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.OleDb;
+using System.Data.SqlClient;
+
+namespace BPERP
+{
+    public partial class Edit_My_Details : UserControl
+    {
+
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-I50R950\\SQLEXPRESS;Initial Catalog=Doctor_Register_1;Integrated Security=True");
+        SqlCommand cmd1;
+        SqlDataReader reader;
+
+        public Edit_My_Details()
+        {
+            InitializeComponent();
+        }
+
+   
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Are You Sure Update Data", "Update Data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //Update Data
+                connection.Open();
+                String updateQ = "UPDATE Doctor_Register_Table_1 SET Doctor_Name='" + textBox1.Text + "', Email='" + textBox3.Text + "', Designation='" + textBox4.Text + "', Degrees='" + textBox5.Text + "',Department='" + textBox6.Text + "',  Specialist='" + textBox7.Text + "',  Doctor_Experience='" + textBox8.Text + "',  BirthDay='" + textBox9.Text + "',  Phone_Number='" + textBox10.Text + "' WHERE Doctor_Id= " + int.Parse(textBox13.Text);
+                SqlCommand command = new SqlCommand(updateQ, connection);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Data Updated");
+                }
+                else
+                {
+                    MessageBox.Show("Not Updated");
+                }
+
+                connection.Close();
+            }
+
+
+
+
+
+
+
+   
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+            //Search By My ID
+
+        }
+
+        private void searchBttn_Click(object sender, EventArgs e)
+        {
+
+          
+
+            connection.Open();
+            String sQ ="SELECT * FROM  Doctor_Register_Table_1 WHERE Doctor_Id =" +int.Parse(textBox13.Text);
+            cmd1 = new SqlCommand(sQ,connection);
+
+            reader = cmd1.ExecuteReader();
+
+            if (reader.Read())
+            {
+                textBox1.Text = reader["Doctor_Name"].ToString();
+                textBox12.Text = reader["Username"].ToString();
+                textBox3.Text = reader["Email"].ToString();
+                textBox4.Text = reader["Designation"].ToString();
+                textBox5.Text = reader["Degrees"].ToString();
+                textBox6.Text = reader["Department"].ToString();
+                textBox7.Text = reader["Specialist"].ToString();
+                textBox8.Text = reader["Doctor_Experience"].ToString();
+                textBox9.Text = reader["BirthDay"].ToString();
+                textBox10.Text = reader["Phone_Number"].ToString();
+
+            }
+  
+            else
+            {
+                MessageBox.Show("ID Not Found");
+            }
+
+            connection.Close();
+
+        }
+
+    }
+}

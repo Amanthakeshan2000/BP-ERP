@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91748CBB-7904-49B6-A7CE-EE70C03E2BE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyotek.Collections.Generic.CircularBuffer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cyotek.CircularBuffer.1.2.1\lib\net472\Cyotek.Collections.Generic.CircularBuffer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D_Appoinment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Appoinment.Designer.cs">
+      <DependentUpon>D_Appoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Appoinment_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Appoinment_1.Designer.cs">
+      <DependentUpon>D_Appoinment_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Appoinment_1a.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Appoinment_1a.Designer.cs">
+      <DependentUpon>D_Appoinment_1a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Appoinment_1b.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Appoinment_1b.Designer.cs">
+      <DependentUpon>D_Appoinment_1b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Appoinment_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Appoinment_2.Designer.cs">
+      <DependentUpon>D_Appoinment_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Dashboard.Designer.cs">
+      <DependentUpon>D_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Doctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Doctor.Designer.cs">
+      <DependentUpon>D_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Doctor_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Doctor_1.Designer.cs">
+      <DependentUpon>D_Doctor_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Doctor_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Doctor_2.Designer.cs">
+      <DependentUpon>D_Doctor_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Doctor_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Doctor_3.Designer.cs">
+      <DependentUpon>D_Doctor_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D_Form3.Designer.cs">
+      <DependentUpon>D_Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D_Page.Designer.cs">
+      <DependentUpon>D_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Patient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Patient.Designer.cs">
+      <DependentUpon>D_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Patient_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Patient_1.Designer.cs">
+      <DependentUpon>D_Patient_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D_Patient_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="D_Patient_2.Designer.cs">
+      <DependentUpon>D_Patient_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading_Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading_Form3.Designer.cs">
+      <DependentUpon>Loading_Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Staff_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Page.Designer.cs">
+      <DependentUpon>Staff_Page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="D_Appoinment.resx">
+      <DependentUpon>D_Appoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Appoinment_1.resx">
+      <DependentUpon>D_Appoinment_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Appoinment_1a.resx">
+      <DependentUpon>D_Appoinment_1a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Appoinment_1b.resx">
+      <DependentUpon>D_Appoinment_1b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Appoinment_2.resx">
+      <DependentUpon>D_Appoinment_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Dashboard.resx">
+      <DependentUpon>D_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Doctor.resx">
+      <DependentUpon>D_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Doctor_1.resx">
+      <DependentUpon>D_Doctor_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Doctor_2.resx">
+      <DependentUpon>D_Doctor_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Doctor_3.resx">
+      <DependentUpon>D_Doctor_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Form3.resx">
+      <DependentUpon>D_Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Page.resx">
+      <DependentUpon>D_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Patient.resx">
+      <DependentUpon>D_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Patient_1.resx">
+      <DependentUpon>D_Patient_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_Patient_2.resx">
+      <DependentUpon>D_Patient_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading_Form3.resx">
+      <DependentUpon>Loading_Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Staff_Page.resx">
+      <DependentUpon>Staff_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

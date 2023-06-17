@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01979487-85E9-4977-98E9-FA15188CFC4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BPERP</RootNamespace>
+    <AssemblyName>BPERP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2_appoinmentListUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2_appoinmentListUserControl1.Designer.cs">
+      <DependentUpon>2_appoinmentListUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_DoctorListUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2_DoctorListUserControl1.Designer.cs">
+      <DependentUpon>2_DoctorListUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_patientListUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="2_patientListUserControl1.Designer.cs">
+      <DependentUpon>2_patientListUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppoinmentUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppoinmentUserControl1.Designer.cs">
+      <DependentUpon>AppoinmentUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoctorUserControl1.Designer.cs">
+      <DependentUpon>DoctorUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_Register_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Doctor_Register_new.Designer.cs">
+      <DependentUpon>Doctor_Register_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_My Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit_My Details.Designer.cs">
+      <DependentUpon>Edit_My Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emergency_StopUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Emergency_StopUserControl1.Designer.cs">
+      <DependentUpon>Emergency_StopUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoiceUserControl1.Designer.cs">
+      <DependentUpon>InvoiceUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="my_details_Doctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="my_details_Doctor.Designer.cs">
+      <DependentUpon>my_details_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PaymentUserControl1.Designer.cs">
+      <DependentUpon>PaymentUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrescriptionUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrescriptionUserControl1.Designer.cs">
+      <DependentUpon>PrescriptionUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\doctor.Designer.cs">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleUserControl1.Designer.cs">
+      <DependentUpon>ScheduleUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup_DataUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Setup_DataUserControl1.Designer.cs">
+      <DependentUpon>Setup_DataUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1Dashboard.Designer.cs">
+      <DependentUpon>UserControl1Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2patient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2patient.Designer.cs">
+      <DependentUpon>UserControl2patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users_UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users_UserControl1.Designer.cs">
+      <DependentUpon>Users_UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web_SettingUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Web_SettingUserControl1.Designer.cs">
+      <DependentUpon>Web_SettingUserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="2_appoinmentListUserControl1.resx">
+      <DependentUpon>2_appoinmentListUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_DoctorListUserControl1.resx">
+      <DependentUpon>2_DoctorListUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_patientListUserControl1.resx">
+      <DependentUpon>2_patientListUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppoinmentUserControl1.resx">
+      <DependentUpon>AppoinmentUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorUserControl1.resx">
+      <DependentUpon>DoctorUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Register_new.resx">
+      <DependentUpon>Doctor_Register_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_My Details.resx">
+      <DependentUpon>Edit_My Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emergency_StopUserControl1.resx">
+      <DependentUpon>Emergency_StopUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceUserControl1.resx">
+      <DependentUpon>InvoiceUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="my_details_Doctor.resx">
+      <DependentUpon>my_details_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentUserControl1.resx">
+      <DependentUpon>PaymentUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionUserControl1.resx">
+      <DependentUpon>PrescriptionUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\doctor.resx">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleUserControl1.resx">
+      <DependentUpon>ScheduleUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup_DataUserControl1.resx">
+      <DependentUpon>Setup_DataUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1Dashboard.resx">
+      <DependentUpon>UserControl1Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2patient.resx">
+      <DependentUpon>UserControl2patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users_UserControl1.resx">
+      <DependentUpon>Users_UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web_SettingUserControl1.resx">
+      <DependentUpon>Web_SettingUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concentrated-doctor-working-with-virtual-screen 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2-01 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concentrated-doctor-working-with-virtual-screen 1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 198.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 205.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 206.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 209.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Da icon _List_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 194.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 195.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 193.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person icon _Person Circle_.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
